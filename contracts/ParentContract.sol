@@ -12,6 +12,7 @@ contract ParentContract {
         emitter2 = emitter2_;
     }
 
+    /// emitBothEvents: Simply calls both emitters providing the values
     function emitBothEvents(uint256 val1, uint256 val2) external {
         emitter1.emitEventWithArgs(val1, val2);
         emitter2.emitEventWithArgs(val2, val1);
