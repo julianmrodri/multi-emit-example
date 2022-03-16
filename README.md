@@ -27,3 +27,16 @@ $ yarn test
 ```
 
 
+## Output
+
+All tests will **pass**, however it is very clear that the last two **should fail**. This makes the valid ones completely unreliable.
+
+```
+Events
+    ✔ Should emit one of the events - OK
+    ✔ Should emit the other event - OK
+    ✔ Should emit both events - OK... but checking?
+    ✔ Should fail but passes - NOT COOL, wrong event name!
+    ✔ Should fail but passes - NOT COOL, wrong value!
+```
+  
