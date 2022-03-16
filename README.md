@@ -8,13 +8,22 @@ This is quite dangerous and one would expect all checks are in place, and in cas
 
 To run the tests simply follow these steps:
 
-1. Clone repo
+1. Clone repository
 
 ```bash
-yarn test
+$ git clone git@github.com:julianmrodri/multi-emit-example.git
+```
+
+2. Move to project folder and install dependencies
+
+```bash
+$ yarn install
+```
+
+3. Run tests
+
+```bash
+$ yarn test
 ```
 
 
-```bash
-yarn test
-```
