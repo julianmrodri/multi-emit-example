@@ -9,6 +9,11 @@ interface IEmitter {
 contract EventEmitter is IEmitter {
     constructor(){}
 
+    function emitTwice(uint256 val1, uint256 val2) external {
+        emit EventHappened(val1, val2);
+        emit EventHappened(val1+1, val2+1);
+    }
+
     /// emitEventWithArgs: Simply emits the event with the provided values
     function emitEventWithArgs(uint256 val1, uint256 val2) external {
         emit EventHappened(val1, val2);
