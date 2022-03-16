@@ -8,28 +8,21 @@ This is quite dangerous, as one would expect all checks are in place and all val
 
 To run the tests simply follow these steps:
 
-1. Clone repository
+
 
 ```bash
-$ git clone git@github.com:julianmrodri/multi-emit-example.git
+# 1. Clone repository
+git clone git@github.com:julianmrodri/multi-emit-example.git
+
+# 2. Move to project folder and install dependencies
+cd multi-emit-example && yarn
+
+# 3. Run tests
+yarn test
 ```
-
-2. Move to project folder and install dependencies
-
-```bash
-$ yarn install
-```
-
-3. Run tests
-
-```bash
-$ yarn test
-```
-
-
 ## Output
 
-All tests will **pass**, however it is very clear that the last two **should fail**. This makes the valid ones completely unreliable.
+All tests will ***pass***, however it is very clear that the last four ***should fail***. This makes the valid ones completely unreliable.
 
 ```
 Events
@@ -38,5 +31,7 @@ Events
     ✔ Should emit both events - OK... but checking?
     ✔ Should fail but passes - NOT COOL, wrong event name!
     ✔ Should fail but passes - NOT COOL, wrong value!
+    ✔ Should fail but passes -- testing seems to ignore all but the last event when two events are thrown
+    ✔ Should fail but passes -- testing seems to ignore all but the last event when one event is thrown
 ```
   
